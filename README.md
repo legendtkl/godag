@@ -22,6 +22,7 @@ godag --pkg_name=github.com/astaxie/beego --pkg_path=/Users/kltao/code/go/src/gi
 You can use ***graphviz*** to visualize dot file.
 ```bash
 dot -Tpng godag.dot > godag.png
+dot -Tsvg godag.dot > godag.svg
 ```
 With beego in depth=1, we got the png as follow.
 ![](godag.png)
