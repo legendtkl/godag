@@ -93,8 +93,9 @@ func analyseDir(dir string) error {
             fmt.Printf("prevent panic by handling failure accessing a path %q: %v\n", dir, err)
             return err
         }
+
         if !info.IsDir() {
-            if strings.Contains(path, ".go") {
+            if strings.Contains(path, ".go") && !strings.Contains(path, pkgPath + "/vendor"){
                 //fmt.Printf("visited file: %q\n", path)
                 analyseGoFile(path)
             }
