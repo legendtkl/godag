@@ -34,9 +34,6 @@ func depthParse(s, tag string) string {
         }
         ret += "/" + parts[i]
     }
-    if ret == "beego/astaxie" {
-        fmt.Println(s)
-    }
     //fmt.Println(ret)
     return ret
 }
