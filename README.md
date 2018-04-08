@@ -9,7 +9,7 @@ go get -u github.com/legendtkl/godag
 
 ### 2. Run
 ```bash
-godag --pkg_name=github.com/astaxie/beego --pkg_path=/Users/kltao/code/go/src/github.com/astaxie/beego --depth=1 --depth=1 --dot_file_path=a.dot
+godag --pkg_name=github.com/astaxie/beego --pkg_path=/Users/kltao/code/go/src/github.com/astaxie/beego --depth=1 --dot_file_path=a.dot
 ```
 
 #### Flags
